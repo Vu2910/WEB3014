@@ -1,25 +1,19 @@
 <?php
     //Đã có biến $tours từ controller trước khi include view
 ?>
-<h2><a href="./index.php?url=create-tour">Create Tour</a></h2>
-    <thead>
-        <tr>
-            <td>ID</td>
-            <td>Name</td>
-            <td>Category</td>
-            <td>Edit</td>
-        </tr>
-    </thead>
+<h1>DAT TOUR</h1>
     <tbody>
         <?php foreach ($tours as $key => $ts) : ?>
             <tr>
-                <td><?= $ts['id'] ?></td>
-                <td><?= $ts['name'] ?></td>
-                <td><?= $ts['cate_name'] ?></td>
+                <br>
+            <br>
+                <td><h3>ID:<?= $ts['id'] ?>| NAME:<?= $ts['name'] ?></td>
+                <td><h3>TOUR:<?= $ts['cate_name'] ?></h3></td>
                 <td>
-                    <a href="./index.php?url=edit-tour&id=<?= $ts['id'] ?>">Update</a>
-                    /
-                    <a onclick="return confirm('Bạn có chắc muốn xóa không?')" href="./index.php?url=destroy-tour&id=<?= $ts['id'] ?>">Delete</a>
+                <a href="./index.php?url=create-tour">Them</a>
+                    <a href="./index.php?url=edit-tour&id=<?= $ts['id'] ?>">Sua</a>
+                   
+                    <a onclick="return confirm('Bạn có muốn xóa?')" href="./index.php?url=destroy-tour&id=<?= $ts['id'] ?>">Xoa</a>
                 </td>
             </tr>
         <?php endforeach; ?>

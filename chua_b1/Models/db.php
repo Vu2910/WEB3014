@@ -5,7 +5,7 @@ define('FETCH_ONE', 1);
 define('NOT_FETCH', 0);
 
 function getConn(){
-    $conn = new PDO('mysql:host=localhost;dbname=ph14431_examphp1;charset=utf8', 'root', '');
+    $conn = new PDO('mysql:host=localhost;dbname=php2examphp1;charset=utf8', 'root', '');
     return $conn;
 }
 
