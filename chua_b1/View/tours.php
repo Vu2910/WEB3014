@@ -1,7 +1,7 @@
 <?php
     //Đã có biến $tours từ controller trước khi include view
 ?>
-<h1>DAT TOUR</h1>
+<h1>DAT TOUR </h1>
     <tbody>
         <?php foreach ($tours as $key => $ts) : ?>
             <tr>
